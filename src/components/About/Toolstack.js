@@ -6,14 +6,13 @@ import {
   SiSlack,
   SiVercel,
   SiMacos,
+  SiJetbrains, // Importing JetBrains icon for PyCharm
+  SiMysql, // Importing MySQL icon for MySQL Workbench
 } from "react-icons/si";
 
 function Toolstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiMacos />
-      </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiVisualstudiocode />
       </Col>
@@ -21,10 +20,10 @@ function Toolstack() {
         <SiPostman />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiSlack />
+        <SiJetbrains /> {/* Using JetBrains icon for PyCharm */}
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiVercel />
+        <SiMysql /> {/* Adding MySQL icon for MySQL Workbench */}
       </Col>
     </Row>
   );
